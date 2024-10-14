@@ -1,0 +1,217 @@
+* { 
+    list-style-type: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, "Roboto", Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a { 
+    text-decoration: none;
+}
+
+header #haut {
+    display: flex;
+    justify-content: space-around;
+    gap: 5%;
+}
+
+header #best {
+    font-family: sans-serif;
+    font-size: 1rem;
+    padding-right: 10%;   
+}
+
+header .sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: black;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+}
+   
+header.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: purple;
+    display: block;
+    transition: 0.3s;
+}
+  
+header .sidenav a:hover {
+    color: wheat;
+}
+  
+header .sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header .sidenav.active {
+    left: 0;
+  }
+
+header .sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+header .burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+header #barre {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+header #search {
+    width: 80%;
+    height: 80%;
+    border-radius: 30px;
+    border: 2px solid black;
+    
+}
+header #sidebar select {
+    width: 100%; 
+    padding: 2%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+header #button {
+    background-color:wheat;
+    border: 0px solid black;
+    height: 30px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+}
+  
+select:focus {
+    border-color: #666;
+    background-color: #fff;
+    outline: none;
+}
+  
+select option {
+    background-color: #fff;
+    color: #333;
+}
+  
+body #Collection {
+    font-family: sans-serif;
+    font-size: 1rem;
+    padding-right: 10%;
+  }
+body #Color {
+    font-family: sans-serif;
+    font-size: 1rem;
+    padding-right: 10%;
+}  
+  
+body #Category {
+    font-family: sans-serif;
+    font-size: 1rem;
+    padding-right: 10%;
+}  
+  
+body #premierEtage {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4%;
+}
+
+body #truc select {
+    margin-bottom: 0%; 
+}
+
+body #deuxiemeEtage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8.9%; 
+}
+
+body .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px; 
+}
+
+ footer #pagination {
+    display: flex;
+    justify-content: left;
+}
+  
+ footer #pagination button {
+    background-color: wheat;
+    color: white;
+    border-radius: 5px;  
+    margin: 0 5px;
+}
+  
+
+  
+
+
+
+@media (max-width: 768px) {
+
+header #haut {
+    display: flex;
+    justify-content: space-around;
+    gap: 4%; 
+}
+  
+header #barre {
+    flex-direction: column; 
+    justify-content: center; 
+    gap: 10%; 
+}
+    
+header #search {
+    width: 100%; 
+}
+  
+header #button {
+    width: 100%;
+}
+     
+body #premierEtage, #deuxiemeEtage {
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20%; 
+}
+     
+body #sidebar select {
+    width: 100%; 
+}
+  
+footer #pagination {
+   display: flex;
+   justify-content: center;
+}
+}
+  

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rush 2</title>
+</head>
+
+<header>
+   
+      
+    <div id="haut">
+        <a href="#" id="openBtn">
+            <span class="burger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </a> 
+          <div id="mySidenav" class="sidenav">
+            <a href="#" id="closeBtn" class="close">×</a>
+            <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">SHOP</a></li>
+              <li><a href="#">MAGAZINE</a></li>
+            </ul>
+          </div> 
+          
+    <h4><a href="">HOME</a></h4>
+    <h4><a href="">SHOP</a></h4>
+    <h4><a href="">MAGAZINE</a></h4>  
+    <a href="">
+    <img src="./Image/icone_panier.png" alt="icone_panier" width="50">
+    </a>
+    <a href="https://auth.leboncoin.fr/login/?abtesting=false&client_id=lbc-front-web&error=login_required&error_debug=session%20token%20is%20not%20found%20or%20expired&error_description=you%20should%20login%20first%2C%20the%20__Secure-login%20cookie%20is%20not%20found.&error_hint=you%20should%20login%20first%2C%20you%20can%20follow%20this%20url%20https%3A%2F%2Fauth.leboncoin.fr%2Flogin%3Fabtesting%3Dfalse%26client_id%3Dlbc-front-web%26from_to%3Dhttps%253A%252F%252Fwww.leboncoin.fr%252F%26redirect_uri%3Dhttps%253A%252F%252Fauth.leboncoin.fr%252Fapi%252Fauthorizer%252Fv2%252Fauthorize%253Fabtesting%253Dfalse%2526client_id%253Dlbc-front-web%2526redirect_uri%253Dhttps%25253A%25252F%25252Fwww.leboncoin.fr%25252Foauth2callback%2526response_type%253Dcode%2526scope%253D%25252A%252Boffline%2526state%253Da427f32b-a216-4ee2-95ae-fd09913e6850%20to%20retrieve%20__Secure-login%20cookie&from_to=https%3A%2F%2Fwww.leboncoin.fr%2F&redirect_uri=https%3A%2F%2Fauth.leboncoin.fr%2Fapi%2Fauthorizer%2Fv2%2Fauthorize%3Fabtesting%3Dfalse%26client_id%3Dlbc-front-web%26redirect_uri%3Dhttps%253A%252F%252Fwww.leboncoin.fr%252Foauth2callback%26response_type%3Dcode%26scope%3D%252A%2Boffline%26state%3Da427f32b-a216-4ee2-95ae-fd09913e6850">
+    <img src="./Image/icone_login.webp" alt="icone_login" width="50">
+    </a>
+    </div>
+
+
+    <div id="barre">
+     <img src="./Image/loupe.png" alt="icone_loupe" width="35">   
+    <input type="search" id="search" value="">
+    <ul>
+        <li>
+            <label for="best"></label>
+            <select id="best">
+                <option value="">Best Match</option>
+                <option value="Inside">moderne</option>
+                <option value="Outside">traditionnel</option>
+                <option value="Inside">baroque</option>
+            </select>
+        </li>
+    </ul>
+    </div>
+
+</header>
+
+<body>
+    <div id="premierEtage">
+        <div id="sidebar">
+            <h3>Filter By</h3>
+            <ul>
+                <li>
+                    <label for="collection">Collection</label>
+                    <select id="collection">
+                        <option value="">Collection</option>
+                        <option value="Inside">Inside</option>
+                        <option value="Outside">Outside</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="color">Color</label>
+                    <select id="color">
+                        <option value="">Color</option>
+                        <option value="Red">Red</option>
+                        <option value="Blue">Blue</option>
+                        <option value="White">White</option>
+                        <option value="Black">Black</option>
+                        <option value="Grey">Grey</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="category">Category</label>
+                    <select id="category">
+                        <option value="">Category</option>
+                        <option value="LOUNGE">LOUNGE</option>
+                        <option value="TABLE & CHAIRS">TABLE & CHAIRS</option>
+                        <option value="ARMCHAIR">ARMCHAIR</option>
+                        <option value="SIDE TABLE">SIDE TABLE</option>
+                        <option value="SHELVES">SHELVES</option>
+                        <option value="CHAIR">CHAIR</option>
+                        <option value="SHELVES">SHELVES</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="priceRange">Price Range: </label>
+                    <input type="range" id="priceRange" name="priceRange" min="0" max="10000" step="100">
+                    <span id="priceValue">$0</span>
+                </li>                  
+            </ul>
+        </div>
+        
+        <div id="image1" class="product">
+            <img src="./Image/canap.png" alt="canap" width="200">
+            <div class="info">
+                <ul>
+                    <li><h4>Coombes</h4></li>
+                    <li><h5>LOUNGE</h5></li>
+                    <div class="stars">       
+                        <li><a href="">★ ★ ★ ★ ☆</a></li>
+                    </div>         
+                </ul>
+                <ul>
+                    <li><h4>$2,600</h4></li>
+                    <a href="">
+                        <li><img src="./Image/icone_aupanier.png" alt="au panier" width="35"></li>
+                    </a>
+                </ul>
+            </div>        
+        </div>
+
+        <div id="image2" class="product">
+            <img src="./Image/image.png" alt="Image" width="200">
+            <div class="info">
+                <ul>
+                    <li><h4>Keeve Set</h4></li>
+                    <li><h5>TABLE & CHAIRS</h5></li>
+                    <div class="stars">            
+                        <li><a href="">★ ★ ★ ★ ☆</a></li>
+                    </div>            
+                </ul>
+                <ul>
+                    <li><h4>$590</h4></li>
+                    <a href="">
+                        <li><img src="./Image/icone_aupanier.png" alt="au panier" width="35"></li>
+                    </a>
+                </ul>
+            </div>
+        </div> 
+
+        <div id="image3" class="product">
+            <img src="./Image/dehors.png" alt="dehors" width="200">
+            <div class="info">
+                <ul>
+                    <li><h4>Nillè</h4></li>
+                    <li><h5>ARMCHAIR</h5></li>
+                    <div class="stars">
+                        <li><a href=""> ★ ★ ★ ★ ★</a></li>
+                    </div>
+                </ul>
+                <ul>
+                    <li><h4>$950</h4></li>
+                    <a href="">
+                        <li><img src="./Image/icone_aupanier.png" alt="au panier" width="35"></li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="deuxiemeEtage" class="product">
+        <div id="image4">
+            <img src="./Image/nuit.png" alt="étage de nuit" width="200">
+            <div class="info">
+                <ul>
+                    <li><h4>Blanko</h4></li>
+                    <li><h5>SIDE TABLE</h5></li>
+                    <div class="stars">
+                        <li> <a href="">★ ★ ★ ★ ☆</a></li>
+                    </div>
+                </ul>
+                <ul>
+                    <li><h4>$90</h4></li>
+                    <a href="">
+                        <li><img src="./Image/icone_aupanier.png" alt="au panier" width="35"></li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <div id="image5" class="product">
+            <img src="./Image/meuble.png" alt="meuble" width="200">
+            <div class="info">
+                <ul>
+                    <li><h4>Momo</h4></li>
+                    <li><h5>SHELVES</h5></li>
+                    <div class="stars">
+                        <li> <a href="">★ ★ ★ ★ ☆</a></li>
+                    </div>
+                </ul>
+                <ul>
+                    <li><h4>$890</h4></li>
+                    <a href="">
+                        <li><img src="./Image/icone_aupanier.png" alt="au panier" width="35"></li>
+                    </a>
+                </ul>
+            </div>    
+        </div>
+
+        <div id="image6" class="product">
+            <img src="./Image/chaise.png" alt="chaise" width="200">
+            <div class="info">
+                <ul>
+                    <li><h4>penemillè</h4></li>
+                    <li><h5>CHAIR</h5></li>
+                    <div class="stars">  
+                        <li><a href="">★ ★ ★ ★ ☆</a></li>
+                    </div>      
+                </ul>
+                <ul>
+                    <li><h4>$120</h4></li>
+                    <a href="">
+                        <li><img src="./Image/icone_aupanier.png" alt="au panier" width="35"></li>
+                    </a>
+                </ul>
+            </div>    
+        </div>
+
+        <div id="image7" class="product">
+            <img src="./Image/chelou.png" alt="truc" width="200">
+            <div class="info">
+                <ul>
+                    <li><h4>kappu</h4></li>
+                    <li><h5>SHELVES</h5></li>
+                    <div class="stars">    
+                        <li> <a href="">★ ★ ★ ★ ☆</a></li>
+                    </div>    
+                </ul>
+                <ul>
+                    <li><h4>$420</h4></li>
+                    <a href="">
+                        <li><img src="./Image/icone_aupanier.png" alt="au panier" width="35"></li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+<footer>
+    <div id="pagination">
+        <a href="">
+        <button>&lt;</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>10</button>
+        <button>&gt;</button>
+        </a>
+    </div>
+</footer>
+<script src="rush.js"></script>
+</html>
